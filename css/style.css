@@ -1,8 +1,8 @@
 #home {
-      width: 500px;
-      height: 500px;
+      width: 350px;
+      height: 350px;
       background-image: url('../img/snake.png');
-      background-size: auto 500px;
+      background-size: auto 350px;
       background-repeat: no-repeat;
       background-color: lightblue;
       background-position: center center;
@@ -33,7 +33,7 @@
     p {
       font-family: Helvetica;
       font-weight: bold;
-      width: 500px;
+      width: 350px;
       margin: 18px 0 5px 8px;
       float: center center;
     }
@@ -41,6 +41,12 @@
     .game {
       margin: 0 auto;
       position: center center;
+      width: 350px;
+      height: 350px;
+      background-color: lightblue;
+    }
+
+    .mycanvas {
       width: 500px;
       height: 500px;
     }

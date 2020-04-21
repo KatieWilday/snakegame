@@ -8,7 +8,7 @@ var drawModule = (function () {
   }
 
   var pizza = function(x, y) {
-        ctx.fillStyle = 'pink';
+        ctx.fillStyle = 'lightpink';
         ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
         ctx.fillStyle = 'darkred';
         ctx.fillRect(x*snakeSize+1, y*snakeSize+1, snakeSize-2, snakeSize-2);
@@ -57,8 +57,8 @@ var drawModule = (function () {
         }
 
         if(snakeX == food.x && snakeY == food.y) {
-          var tail = {x: snakeX, y: snakeY}; 
-          score ++;
+          var tail = {x: snakeX, y: snakeY};
+          score += 10;
 
           createFood();
         } else {
