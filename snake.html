@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Welcome to Snake Game!</title>
+<title>Snake Game!</title>
 </head>
 
 <body>
-The content of the document......
+  <canvas id="gameCanvas" width="300" height="300"></canvas>
+    <script>
+      const gameCanvas = document.getElementById("gameCanvas")
+      const ctx = gameCanvas.getContext("2d");
+
+      let snake = [
+      {x: 150, y: 150},
+      {x: 140, y: 150},
+      {x: 130, y: 150},
+      {x: 120, y: 150},
+      {x: 110, y: 150}
+      ]
+    </script>
 </body>
 
 </html>
