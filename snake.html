@@ -7,8 +7,8 @@
 <body>
   <canvas id="gameCanvas" width="300" height="300"></canvas>
     <script>
-      const gameCanvas = document.getElementById("gameCanvas")
-      const ctx = gameCanvas.getContext("2d");
+      const CANVAS_BORDER_COLOUR = 'black';
+      const CANVAS_BACKGROUND_COLOUR = "white";
 
       let snake = [
       {x: 150, y: 150},
@@ -17,6 +17,15 @@
       {x: 120, y: 150},
       {x: 110, y: 150}
       ]
+
+      const gameCanvas = document.getElementById("gameCanvas")
+      const ctx = gameCanvas.getContext("2d");
+
+      function drawSnakePart(snakePart) {
+        ctx.fillStyle = 'lightgreen';
+        ctx.strokestyle = 'darkgreen';
+      }
+
     </script>
 </body>
 
