@@ -1,23 +1,24 @@
 var drawModule = (function () {
 
   var bodySnake = function(x, y) {
-        ctx.fillStyle = 'blue';
+        ctx.fillStyle = 'lightblue';
         ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
         ctx.strokeStyle = 'darkblue';
         ctx.strokeRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
   }
 
   var pizza = function(x, y) {
-        ctx.fillStyle = 'lightpink';
-        ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
         ctx.fillStyle = 'darkred';
+        ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
+        ctx.fillStyle = 'lightpink';
         ctx.fillRect(x*snakeSize+1, y*snakeSize+1, snakeSize-2, snakeSize-2);
   }
 
   var scoreText = function() {
     var score_text = "Score: " + score;
     ctx.fillStyle = 'black';
-    ctx.fillText(score_text, 145, h-5);
+    ctx.font='24px Veranda'
+    ctx.fillText(score_text, 135, h-3);
   }
 
   var drawSnake = function() {

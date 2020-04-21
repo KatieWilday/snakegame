@@ -6,8 +6,8 @@
       background-repeat: no-repeat;
       background-color: lightblue;
       background-position: center center;
-      padding: 0;
-      margin: 03;
+      padding: 5;
+      margin: 0;
 
     }
 
@@ -18,9 +18,10 @@
       bottom: 0;
       height: 30px;
       font-size: 12pt;
-      float: right;
+      float: center;
       width: 90px;
       position: center center;
+      margin-top: 3;
     }
     button:hover {
       background-color: orange;
