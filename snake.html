@@ -6,11 +6,17 @@
  </head>
  <body>
   <div class='game'>
-  <div id = 'home'>
-    <canvas id='mycanvas' width='350' height='350'>
-    </canvas>
+    <div id = 'home'>
+      <canvas id='mycanvas' width='350' height='350'>
+      </canvas>
     </div>
-    <button id='btn'>START</button>
+
+    <div id="overlay">
+		    Your Final Score: <span id="final_score"></span>
+		    <br>
+        <button onClick="window.location.reload()" href="#">Play Again</button>
+    </div>
+      <button id='btn'>START</button>
   </div>
 
   <script src="js/settings.js"></script>
